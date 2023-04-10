@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pong Game</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="menu">
+      <h1>Pong Game</h1>
+      <div class="menu-item">
+        <label for="difficulty">Select difficulty:</label>
+        <label><input type="radio" name="difficulty" value="easy" checked> Easy</label>
+        <label><input type="radio" name="difficulty" value="medium"> Medium</label>
+        <label><input type="radio" name="difficulty" value="hard"> Hard</label>
+      </div>
+      <button id="start-button">Start Game</button>
+    </div>
+    <div id="game-container">
+      <div class="game-scoreboard">
+        <div class="game-score">Player 1: <span id="player1-score">0</span></div>
+        <div class="game-score">Player 2: <span id="player2-score">0</span></div>
+      </div>
+      <canvas id="canvas"></canvas>
+    </div>
+    <script src="pong.js"></script>
+  </body>
+</html>
